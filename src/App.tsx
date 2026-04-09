@@ -29,7 +29,7 @@ export default function App() {
       <Overlay />
 
       {/* Scroll Spacer - 10 states, each with some scroll room */}
-      <div className="relative h-[1000vh] pointer-events-none" />
+      <div className="relative h-[4000vh] pointer-events-none" />
     </main>
   );
 }
