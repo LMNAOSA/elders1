@@ -176,7 +176,7 @@ export default function ParticleSystem({ sourceKey, targetKey, transitionProgres
     const sourceBuffer = (buffers as any)[sourceKey] || buffers.LAND;
     const targetBuffer = (buffers as any)[targetKey] || buffers.LAND;
 
-    const lerpSpeed = sourceKey === 'IMAGE' || targetKey === 'IMAGE' ? 0.08 : cohesion;
+    const lerpSpeed = sourceKey === 'IMAGE' || targetKey === 'IMAGE' ? 0.15 : cohesion;
 
     for (let i = 0; i < PARTICLE_COUNT; i++) {
       const i3 = i * 3;
@@ -238,9 +238,9 @@ export default function ParticleSystem({ sourceKey, targetKey, transitionProgres
         targetR = 0.1; targetG = 0.6; targetB = 0.9;
       }
 
-      colors[i3] += (targetR - colors[i3]) * 0.05;
-      colors[i3 + 1] += (targetG - colors[i3 + 1]) * 0.05;
-      colors[i3 + 2] += (targetB - colors[i3 + 2]) * 0.05;
+      colors[i3] += (targetR - colors[i3]) * 0.15;
+colors[i3 + 1] += (targetG - colors[i3 + 1]) * 0.15;
+colors[i3 + 2] += (targetB - colors[i3 + 2]) * 0.15;
     }
 
     pointsRef.current.geometry.attributes.position.needsUpdate = true;
