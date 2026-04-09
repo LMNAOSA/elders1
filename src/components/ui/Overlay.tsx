@@ -133,9 +133,9 @@ export default function Overlay() {
           transition={{ duration: 1 }}
           className="text-center max-w-3xl px-6"
         >
-          <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-4 font-sans leading-tight">
-            {getActiveCopy()}
-          </h1>
+        <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-4 font-sans leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
+  {getActiveCopy()}
+</h1>
           
           {currentScene === 'CONTRIBUTION' && (
             <motion.div
