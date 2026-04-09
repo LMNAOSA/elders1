@@ -46,7 +46,7 @@ export default function SceneController() {
   const getParticleConfig = () => {
     let sourceKey: string = currentScene;
     let targetKey: string = nextScene;
-    let cohesion = isCohesionActive ? 0.15 : 0.05;
+    let cohesion = isCohesionActive ? 0.3 : 0.15;
     let t = transitionProgress;
 
     // Narrative overrides
